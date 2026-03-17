@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>12</integer>
+	<key>logs</key>
+	<dict>
+		<key>AC189A4D-E379-4443-90D8-4C2801BE90CC</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AC189A4D-E379-4443-90D8-4C2801BE90CC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>10</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TinyCSV project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TinyCSV</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project TinyCSV with scheme TinyCSV and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>795452908.15678895</real>
+			<key>timeStoppedRecording</key>
+			<real>795452911.36772203</real>
+			<key>title</key>
+			<string>Building project TinyCSV with scheme TinyCSV and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>AC189A4D-E379-4443-90D8-4C2801BE90CC</string>
+		</dict>
+		<key>F539E43F-23C5-4F0F-B93B-7FC8199EE09D</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F539E43F-23C5-4F0F-B93B-7FC8199EE09D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TinyCSV project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TinyCSV</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project TinyCSV with scheme TinyCSV and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>795452858.64195096</real>
+			<key>timeStoppedRecording</key>
+			<real>795452873.04805505</real>
+			<key>title</key>
+			<string>Building project TinyCSV with scheme TinyCSV and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>F539E43F-23C5-4F0F-B93B-7FC8199EE09D</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

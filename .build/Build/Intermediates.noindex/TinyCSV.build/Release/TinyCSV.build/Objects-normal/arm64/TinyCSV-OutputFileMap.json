@@ -1,0 +1,41 @@
+{
+  "" : {
+    "const-values" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSV-primary.swiftconstvalues",
+    "dependencies" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSV-primary.d",
+    "diagnostics" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSV-primary.dia",
+    "emit-module-dependencies" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSV-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSV-primary-emit-module.dia",
+    "pch" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSV-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSV-primary.swiftdeps"
+  },
+  "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/mz/Dev/tinycsv/Sources/TinyCSV/AppState.swift" : {
+    "index-unit-output-path" : "/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/AppState.o"
+  },
+  "/Users/mz/Dev/tinycsv/Sources/TinyCSV/CSVHighlighter.swift" : {
+    "index-unit-output-path" : "/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/CSVHighlighter.o",
+    "llvm-bc" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/CSVHighlighter.bc",
+    "object" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/CSVHighlighter.o"
+  },
+  "/Users/mz/Dev/tinycsv/Sources/TinyCSV/CSVPreviewView.swift" : {
+    "index-unit-output-path" : "/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/CSVPreviewView.o",
+    "llvm-bc" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/CSVPreviewView.bc",
+    "object" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/CSVPreviewView.o"
+  },
+  "/Users/mz/Dev/tinycsv/Sources/TinyCSV/ContentView.swift" : {
+    "index-unit-output-path" : "/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/mz/Dev/tinycsv/Sources/TinyCSV/TinyCSVApp.swift" : {
+    "index-unit-output-path" : "/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSVApp.o",
+    "llvm-bc" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSVApp.bc",
+    "object" : "/Users/mz/Dev/tinycsv/.build/Build/Intermediates.noindex/TinyCSV.build/Release/TinyCSV.build/Objects-normal/arm64/TinyCSVApp.o"
+  }
+}

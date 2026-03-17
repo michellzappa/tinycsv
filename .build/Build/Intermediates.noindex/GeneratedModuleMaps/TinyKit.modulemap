@@ -1,0 +1,4 @@
+module TinyKit {
+header "TinyKit-Swift.h"
+export *
+}
