@@ -31,6 +31,7 @@ struct TinyCSVApp: App {
                     ContentView(state: state, columnVisibility: $columnVisibility)
                 }
             }
+            .navigationTitle(state.selectedFile?.lastPathComponent ?? "TinyCSV")
             .frame(minWidth: 600, minHeight: 400)
             .onAppear {
                 state.restoreLastFolder()
@@ -40,9 +41,14 @@ struct TinyCSVApp: App {
             }
         }
         .windowStyle(.titleBar)
-        .windowToolbarStyle(.unified(showsTitle: false))
+        .windowToolbarStyle(.unified(showsTitle: true))
         .commands {
             CommandGroup(replacing: .newItem) {
+                Button("New File") {
+                    state.newFile()
+                }
+                .keyboardShortcut("n", modifiers: .command)
+
                 Button("Open Folder...") {
                     state.openFolder()
                 }

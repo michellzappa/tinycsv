@@ -6,7 +6,9 @@ import TinyKit
 final class CSVHighlighter: SyntaxHighlighting {
     var baseFont: NSFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
 
-    private let delimiterColor = NSColor.systemPink.withAlphaComponent(0.6)
+    private var delimiterColor: NSColor {
+        NSColor.controlAccentColor.withAlphaComponent(0.7)
+    }
 
     // Alternating column colors for readability
     private var columnColors: [NSColor] {
