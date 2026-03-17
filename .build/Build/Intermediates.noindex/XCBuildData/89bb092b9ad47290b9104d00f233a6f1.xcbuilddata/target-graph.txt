@@ -1,6 +1,0 @@
-Target dependency graph (3 targets)
-Target 'TinyCSV' in project 'TinyCSV'
-➜ Explicit dependency on target 'TinyKit' in project 'TinyKit'
-Target 'TinyKit' in project 'TinyKit'
-➜ Explicit dependency on target 'TinyKit' in project 'TinyKit'
-Target 'TinyKit' in project 'TinyKit' (no dependencies)
