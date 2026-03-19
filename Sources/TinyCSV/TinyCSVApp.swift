@@ -63,5 +63,6 @@ struct TinyCSVApp: App {
                 .keyboardShortcut("s", modifiers: [.command, .control])
             }
         }
+
     }
 }

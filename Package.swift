@@ -1,9 +1,9 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.2
 import PackageDescription
 
 let package = Package(
     name: "TinyCSV",
-    platforms: [.macOS(.v14)],
+    platforms: [.macOS(.v26)],
     dependencies: [
         .package(path: "Packages/TinyKit"),
     ],
@@ -11,7 +11,8 @@ let package = Package(
         .executableTarget(
             name: "TinyCSV",
             dependencies: ["TinyKit"],
-            path: "Sources/TinyCSV"
+            path: "Sources/TinyCSV",
+            swiftSettings: [.swiftLanguageMode(.v5)]
         ),
     ]
 )

@@ -11,6 +11,8 @@ struct ContentView: View {
     @AppStorage("showLineNumbers") private var showLineNumbers = false
     @State private var eventMonitor: Any?
     @State private var jumpToRange: NSRange?
+    @State private var aiState = AIState()
+    @State private var editorBridge = EditorBridge()
 
     var body: some View {
         NavigationSplitView(columnVisibility: $columnVisibility) {
@@ -48,12 +50,14 @@ struct ContentView: View {
                         shouldHighlight: true,
                         highlighterProvider: { CSVHighlighter() },
                         commentStyle: .hash,
-                        jumpToRange: $jumpToRange
+                        jumpToRange: $jumpToRange,
+                        editorBridge: editorBridge
                     )
                 }
 
                 StatusBarView(text: state.content)
             }
+            .modifier(CmdKOverlay(aiState: aiState, editorBridge: editorBridge, content: state.content, fileExtension: state.selectedFile?.pathExtension))
         }
         .onDisappear {
             if let monitor = eventMonitor {
@@ -96,6 +100,10 @@ struct ContentView: View {
                 }
                 if flags == .command && chars == "0" {
                     fontSize = 13
+                    return nil
+                }
+                if flags == .command && chars == "k" {
+                    aiState.activate(selection: editorBridge.currentSelection, range: editorBridge.currentSelectedRange, bridge: editorBridge, folderURL: state.folderURL, supportedExtensions: state.supportedExtensions)
                     return nil
                 }
                 if flags == .command && (chars == "f" || chars == "g") {
