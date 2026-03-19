@@ -1,8 +1,8 @@
 {
   "fill" : {
     "linear-gradient" : [
-      "display-p3:1.00000,1.00000,1.00000,1.00000",
-      "srgb:0.96078,0.61961,0.04314,1.00000"
+      "srgb:0.46667,0.80000,0.66667,1.00000",
+      "srgb:0.32667,0.56000,0.46667,1.00000"
     ],
     "orientation" : {
       "start" : {
@@ -11,7 +11,7 @@
       },
       "stop" : {
         "x" : 0.5,
-        "y" : 0.7
+        "y" : 1
       }
     }
   },
@@ -35,7 +35,7 @@
           "image-name" : "circle.png",
           "name" : "circle",
           "position" : {
-            "scale" : 2,
+            "scale" : 2.2,
             "translation-in-points" : [
               0,
               0
