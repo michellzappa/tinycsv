@@ -30,12 +30,24 @@ targets:
             LSHandlerRank: Default
             LSItemContentTypes:
               - public.comma-separated-values-text
-              - public.tab-separated-values-text
-              - public.plain-text
             CFBundleTypeExtensions:
               - csv
+          - CFBundleTypeName: TSV Document
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Default
+            LSItemContentTypes:
+              - public.tab-separated-values-text
+            CFBundleTypeExtensions:
               - tsv
+              - tab
+          - CFBundleTypeName: Plain Text
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.plain-text
+            CFBundleTypeExtensions:
               - txt
+              - text
         LSApplicationCategoryType: public.app-category.productivity
         UTImportedTypeDeclarations:
           - UTTypeIdentifier: public.comma-separated-values-text
@@ -45,6 +57,14 @@ targets:
             UTTypeTagSpecification:
               public.filename-extension:
                 - csv
+          - UTTypeIdentifier: public.tab-separated-values-text
+            UTTypeDescription: TSV Document
+            UTTypeConformsTo:
+              - public.plain-text
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - tsv
+                - tab
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.tinycsv.app
