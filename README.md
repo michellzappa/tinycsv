@@ -5,6 +5,8 @@ A minimal, fast CSV editor for macOS.
 ![macOS](https://img.shields.io/badge/macOS-26%2B-blue)
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange)
 
+![TinyCSV screenshot](screenshot.png)
+
 ## Features
 
 - **Three-panel layout** — file sidebar, editor, and table preview
