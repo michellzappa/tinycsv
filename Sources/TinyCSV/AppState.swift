@@ -11,6 +11,42 @@ final class AppState: FileState {
         )
     }
 
+    // MARK: - Spotlight
+
+    private static let spotlightDomain = "com.tinyapps.tinycsv.files"
+
+    override func didOpenFile(_ url: URL) {
+        let headers = parsedRows.first?.joined(separator: ", ")
+        SpotlightIndexer.index(file: url, content: content, domainID: Self.spotlightDomain, displayName: headers)
+    }
+
+    override func didSaveFile(_ url: URL) {
+        didOpenFile(url)
+    }
+
+    // MARK: - Export
+
+    var exportHTML: String {
+        let rows = parsedRows
+        guard !rows.isEmpty else {
+            return ExportManager.wrapHTML(body: "<p>No data</p>", title: selectedFile?.lastPathComponent ?? "data")
+        }
+        var body = "<table><thead><tr>"
+        for cell in rows[0] {
+            body += "<th>\(ExportManager.escapeHTML(cell))</th>"
+        }
+        body += "</tr></thead><tbody>"
+        for row in rows.dropFirst() {
+            body += "<tr>"
+            for cell in row {
+                body += "<td>\(ExportManager.escapeHTML(cell))</td>"
+            }
+            body += "</tr>"
+        }
+        body += "</tbody></table>"
+        return ExportManager.wrapHTML(body: body, title: selectedFile?.lastPathComponent ?? "data")
+    }
+
     var isCSV: Bool {
         selectedFile?.pathExtension.lowercased() == "csv"
     }

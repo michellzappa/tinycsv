@@ -50,6 +50,27 @@ struct TinyCSVApp: App {
                 }
                 .keyboardShortcut("o", modifiers: .command)
             }
+            CommandGroup(after: .newItem) {
+                Divider()
+
+                Button("Export as PDF\u{2026}") {
+                    let name = state.selectedFile?.lastPathComponent ?? "data.csv"
+                    ExportManager.exportPDF(html: state.exportHTML, suggestedName: name)
+                }
+                .keyboardShortcut("e", modifiers: [.command, .shift])
+
+                Button("Export as HTML\u{2026}") {
+                    let name = state.selectedFile?.lastPathComponent ?? "data.csv"
+                    ExportManager.exportHTML(html: state.exportHTML, suggestedName: name)
+                }
+
+                Divider()
+
+                Button("Copy as Rich Text") {
+                    ExportManager.copyAsRichText(body: state.exportHTML)
+                }
+                .keyboardShortcut("c", modifiers: [.command, .option])
+            }
             CommandGroup(replacing: .sidebar) {
                 Button("Toggle Sidebar") {
                     withAnimation {
