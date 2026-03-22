@@ -21,6 +21,8 @@ targets:
         buildPhase: resources
       - path: Sources/TinyCSV/Resources/AppIcon.icon
         buildPhase: resources
+      - path: Sources/TinyCSV/Resources/DocIcons
+        buildPhase: resources
     info:
       path: Sources/TinyCSV/Info.plist
       properties:
@@ -28,6 +30,7 @@ targets:
           - CFBundleTypeName: CSV Document
             CFBundleTypeRole: Editor
             LSHandlerRank: Default
+            CFBundleTypeIconFile: doc_csv
             LSItemContentTypes:
               - public.comma-separated-values-text
             CFBundleTypeExtensions:
@@ -35,6 +38,7 @@ targets:
           - CFBundleTypeName: TSV Document
             CFBundleTypeRole: Editor
             LSHandlerRank: Default
+            CFBundleTypeIconFile: doc_tsv
             LSItemContentTypes:
               - public.tab-separated-values-text
             CFBundleTypeExtensions:

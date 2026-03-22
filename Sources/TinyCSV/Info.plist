@@ -11,6 +11,8 @@
 			<array>
 				<string>csv</string>
 			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>doc_csv</string>
 			<key>CFBundleTypeName</key>
 			<string>CSV Document</string>
 			<key>CFBundleTypeRole</key>
@@ -28,6 +30,8 @@
 				<string>tsv</string>
 				<string>tab</string>
 			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>doc_tsv</string>
 			<key>CFBundleTypeName</key>
 			<string>TSV Document</string>
 			<key>CFBundleTypeRole</key>

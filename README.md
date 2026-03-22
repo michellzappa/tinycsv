@@ -1,6 +1,6 @@
 # TinyCSV
 
-A minimal, fast CSV editor for macOS.
+A native macOS CSV and TSV viewer. See your data as a sortable table — click any cell to jump to it in the source.
 
 ![macOS](https://img.shields.io/badge/macOS-26%2B-blue)
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange)
