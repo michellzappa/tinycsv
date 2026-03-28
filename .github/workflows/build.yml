@@ -1,0 +1,17 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Build TinyCSV
+        run: xcodebuild clean build -project TinyCSV.xcodeproj -scheme TinyCSV -configuration Release -derivedDataPath /tmp/tinybuild/tinycsv CODE_SIGN_IDENTITY="-"

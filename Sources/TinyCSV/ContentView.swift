@@ -34,7 +34,8 @@ struct ContentView: View {
                             shouldHighlight: true,
                             highlighterProvider: { CSVHighlighter() },
                             commentStyle: .hash,
-                            jumpToRange: $jumpToRange
+                            jumpToRange: $jumpToRange,
+                            editorBridge: editorBridge
                         )
                     } right: {
                         CSVPreviewView(rows: state.parsedRows, wordWrap: $wordWrap) { row, col in
