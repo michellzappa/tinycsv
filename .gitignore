@@ -1,4 +1,11 @@
 .build/
 *.xcodeproj/
+!TinyCSV.xcodeproj/
+!TinyCSV.xcodeproj/project.pbxproj
+!TinyCSV.xcodeproj/project.xcworkspace/
+!TinyCSV.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+!TinyCSV.xcodeproj/xcshareddata/
+!TinyCSV.xcodeproj/xcshareddata/xcschemes/
+!TinyCSV.xcodeproj/xcshareddata/xcschemes/TinyCSV.xcscheme
 DerivedData/
 .DS_Store
