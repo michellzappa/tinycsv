@@ -33,6 +33,8 @@ A native macOS CSV and TSV viewer. See your data as a sortable table — click a
 ## Build
 
 ```bash
+xcodegen generate --spec project.yml
+
 xcodebuild clean build \
   -project TinyCSV.xcodeproj \
   -scheme TinyCSV \
@@ -40,7 +42,9 @@ xcodebuild clean build \
   -derivedDataPath /tmp/tinybuild/tinycsv \
   CODE_SIGN_IDENTITY="-"
 
+rm -rf /Applications/TinyCSV.app
 cp -R /tmp/tinybuild/tinycsv/Build/Products/Release/TinyCSV.app /Applications/
+xattr -cr /Applications/TinyCSV.app
 ```
 
 ## Keyboard Shortcuts
