@@ -13,20 +13,33 @@
 		4D28627F8EA1CA08259C8A42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4E28197057F87A05B2D7FB /* ContentView.swift */; };
 		5C8808121C327D2F4E593BBE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AD788940C354971E157E3F /* AppState.swift */; };
 		6B994B77ABC8CA148B0982E6 /* TinyCSVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B5D867C5A4709F63F1DCC /* TinyCSVApp.swift */; };
+		928D9BE8D792399B65D62C31 /* TinyCSVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351DB41FEDB19690C017B2C9 /* TinyCSVUITests.swift */; };
 		A4095C20F7ED92BB6AE4E2C4 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = D64341115E19BB234F77083B /* AppIcon.icon */; };
 		D2C0AD93F0DB429D45C0C61A /* TinyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0446FAD7958D5A018CE27055 /* TinyKit */; };
 		DB588486ECD8F907651DFB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03DDDEF7BBBC445A60D613E /* Assets.xcassets */; };
 		F75EF423C9BD4427333CDEA8 /* doc_csv.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55193865EF3A062BCE6B6C70 /* doc_csv.icns */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		05DBB9D6CFC0141C14E6721C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4680AA50BCF8A10E936510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 713F39A651779582FBE5E236;
+			remoteInfo = TinyCSV;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0E7B5D867C5A4709F63F1DCC /* TinyCSVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyCSVApp.swift; sourceTree = "<group>"; };
+		351DB41FEDB19690C017B2C9 /* TinyCSVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyCSVUITests.swift; sourceTree = "<group>"; };
 		55193865EF3A062BCE6B6C70 /* doc_csv.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = doc_csv.icns; sourceTree = "<group>"; };
 		58BF653FB024DA55EC600539 /* CSVPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVPreviewView.swift; sourceTree = "<group>"; };
 		5A270C4E75A17413D8D0BA29 /* doc_tsv.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = doc_tsv.icns; sourceTree = "<group>"; };
 		916F2A18248A0D5CD6475D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		94AD788940C354971E157E3F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		A03DDDEF7BBBC445A60D613E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B95C581E304FA5625FD13687 /* TinyCSVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyCSVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5EEDCA81A866BAE6822160 /* TinyCSV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyCSV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64341115E19BB234F77083B /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		DB4E28197057F87A05B2D7FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +66,7 @@
 				DB04E94CFD217C94A2D071E3 /* Packages */,
 				602B3699FD3A8C6EAAC82880 /* Resources */,
 				A363DE60FD3B851DBD8D7D60 /* TinyCSV */,
+				AF14A9280CE198229E5CE6BF /* TinyCSVUITests */,
 				B6B20B92872A1E7CB779E4DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,10 +105,20 @@
 			path = Sources/TinyCSV;
 			sourceTree = "<group>";
 		};
+		AF14A9280CE198229E5CE6BF /* TinyCSVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				351DB41FEDB19690C017B2C9 /* TinyCSVUITests.swift */,
+			);
+			name = TinyCSVUITests;
+			path = UITests/TinyCSVUITests;
+			sourceTree = "<group>";
+		};
 		B6B20B92872A1E7CB779E4DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				BB5EEDCA81A866BAE6822160 /* TinyCSV.app */,
+				B95C581E304FA5625FD13687 /* TinyCSVUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +134,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A16A11589FEDDBFEA420FD8 /* TinyCSVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0981626644A67FE17067E2EC /* Build configuration list for PBXNativeTarget "TinyCSVUITests" */;
+			buildPhases = (
+				F4776AA1ABB46FC69C9D8CD7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C20C94A34C849A76D8F92B7 /* PBXTargetDependency */,
+			);
+			name = TinyCSVUITests;
+			packageProductDependencies = (
+			);
+			productName = TinyCSVUITests;
+			productReference = B95C581E304FA5625FD13687 /* TinyCSVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		713F39A651779582FBE5E236 /* TinyCSV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 973AC206EA491777F01238B6 /* Build configuration list for PBXNativeTarget "TinyCSV" */;
@@ -139,6 +181,9 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					6A16A11589FEDDBFEA420FD8 = {
+						TestTargetID = 713F39A651779582FBE5E236;
+					};
 					713F39A651779582FBE5E236 = {
 						DevelopmentTeam = 992N457T8D;
 						ProvisioningStyle = Automatic;
@@ -163,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				713F39A651779582FBE5E236 /* TinyCSV */,
+				6A16A11589FEDDBFEA420FD8 /* TinyCSVUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +240,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4776AA1ABB46FC69C9D8CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928D9BE8D792399B65D62C31 /* TinyCSVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C20C94A34C849A76D8F92B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 713F39A651779582FBE5E236 /* TinyCSV */;
+			targetProxy = 05DBB9D6CFC0141C14E6721C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2B9EA39B2202872BA75AC02E /* Debug */ = {
@@ -248,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,6 +319,40 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2D6A1591335685B7221DF8D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinycsv.app.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = TinyCSV;
+			};
+			name = Release;
+		};
+		7B6E2AFA85183146DFB70F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinycsv.app.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = TinyCSV;
 			};
 			name = Debug;
 		};
@@ -281,7 +377,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinycsv.app;
 				PRODUCT_NAME = TinyCSV;
@@ -312,7 +408,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinycsv.app;
 				PRODUCT_NAME = TinyCSV;
@@ -367,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +477,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0981626644A67FE17067E2EC /* Build configuration list for PBXNativeTarget "TinyCSVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B6E2AFA85183146DFB70F54 /* Debug */,
+				2D6A1591335685B7221DF8D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		973AC206EA491777F01238B6 /* Build configuration list for PBXNativeTarget "TinyCSV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

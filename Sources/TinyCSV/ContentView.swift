@@ -14,6 +14,11 @@ struct ContentView: View {
     @State private var aiState = AIState()
     @State private var editorBridge = EditorBridge()
 
+    private var uiSmokeStatus: String {
+        let fileName = state.selectedFile?.lastPathComponent ?? "no-file"
+        return "\(fileName) rows:\(state.parsedRows.count)"
+    }
+
     var body: some View {
         NavigationSplitView(columnVisibility: $columnVisibility) {
             TinyFileList(state: state)
@@ -59,6 +64,9 @@ struct ContentView: View {
                 StatusBarView(text: state.content)
             }
             .modifier(CmdKOverlay(aiState: aiState, editorBridge: editorBridge, content: state.content, fileExtension: state.selectedFile?.pathExtension))
+        }
+        .overlay(alignment: .bottomTrailing) {
+            TinyUITestProbe(text: uiSmokeStatus)
         }
         .onDisappear {
             if let monitor = eventMonitor {

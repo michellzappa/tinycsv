@@ -65,12 +65,15 @@ final class AppState: FileState {
     }
 
     private func parseCSV(_ text: String, delimiter: Character) -> [[String]] {
+        let normalizedText = text
+            .replacingOccurrences(of: "\r\n", with: "\n")
+            .replacingOccurrences(of: "\r", with: "\n")
         var rows: [[String]] = []
         var currentField = ""
         var currentRow: [String] = []
         var inQuotes = false
 
-        let characters = Array(text)
+        let characters = Array(normalizedText)
         var index = 0
 
         while index < characters.count {
@@ -100,8 +103,6 @@ final class AppState: FileState {
                     rows.append(currentRow)
                 }
                 currentRow = []
-            } else if char == "\r" {
-                // Ignore CR and let the following LF commit the row.
             } else {
                 currentField.append(char)
             }

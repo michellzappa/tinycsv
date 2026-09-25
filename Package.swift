@@ -12,6 +12,12 @@ let package = Package(
             name: "TinyCSV",
             dependencies: ["TinyKit"],
             path: "Sources/TinyCSV",
+            exclude: ["Resources", "Info.plist"],
+            swiftSettings: [.swiftLanguageMode(.v5)]
+        ),
+        .testTarget(
+            name: "TinyCSVTests",
+            dependencies: ["TinyCSV"],
             swiftSettings: [.swiftLanguageMode(.v5)]
         ),
     ]

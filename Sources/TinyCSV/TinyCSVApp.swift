@@ -19,7 +19,9 @@ struct TinyCSVApp: App {
                 .navigationTitle(state.selectedFile?.lastPathComponent ?? "TinyCSV")
                 .frame(minWidth: 600, minHeight: 400)
                 .onAppear {
-                    if !TinyAppDelegate.pendingFiles.isEmpty {
+                    if let fixture = TinyRuntime.fixtureURL {
+                        openFiles([fixture])
+                    } else if !TinyAppDelegate.pendingFiles.isEmpty {
                         let files = TinyAppDelegate.pendingFiles
                         TinyAppDelegate.pendingFiles.removeAll()
                         openFiles(files)
